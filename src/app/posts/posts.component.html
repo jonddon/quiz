@@ -1,6 +1,23 @@
-<ul *ngFor = "let post of posts" class="list-group">
+<!-- <ul *ngFor = "let post of posts" class="list-group">
     <li class="list-group-item">
       <p class="text-center">Title: <strong> {{post.title}}</strong></p> 
       <p>{{post.body}}</p>
     </li>
-</ul>
+</ul> -->
+<div class="container fix">
+  <div class="row">
+
+    <div *ngFor= "let staff of staffs" class="card col-lg-4">
+        <img class="card-img-top" src="{{staff.image}}" alt="Card image cap" height="180">
+        <div class="card-body">
+          <h5 class="card-title"> {{staff.name}} </h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><strong>Position: </strong> {{staff.position}}</li>
+          <li class="list-group-item"><strong>Email: </strong> {{staff.email}} </li>
+        </ul>
+    
+    </div>
+  </div>
+
+</div>
