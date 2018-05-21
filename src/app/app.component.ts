@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  posts: any[];
+  constructor(private http: Http){
+  }
+  ngOnInit(){
+    this.http.get("http://jsonplaceholder.typicode.com/posts").
+    subscribe(response=>{
+      this.posts= response.json();
+    });
+  }
 }
