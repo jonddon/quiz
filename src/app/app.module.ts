@@ -10,7 +10,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { RouterModule } from '@angular/router';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { HistoryComponent } from './history/history.component';
-import { RuleComponent } from './rule/rule.component';
 import { HowToPlayComponent } from './how-to-play/how-to-play.component';
 import { LeaderboardComponent } from './leaderboard/leaderboard.component';
 import { QuizzComponent } from './quizz/quizz.component';
@@ -27,7 +26,6 @@ import { LandingPage2Component } from './landing-page2/landing-page2.component';
     NavbarComponent,
     LandingPageComponent,
     HistoryComponent,
-    RuleComponent,
     HowToPlayComponent,
     LeaderboardComponent,
     QuizzComponent,
